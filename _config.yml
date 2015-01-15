@@ -1,0 +1,17 @@
+title: OctoCode
+email: your-email@domain.com
+
+url: "http://localhost:4000"
+#url: "http://octocode.org"
+
+css:
+  - /assets/css/style.css
+
+permalink: /:categories/:year/:month/:title/
+
+timezone:    Asia/Yerevan
+future:      true
+highlighter: pygments
+markdown:    kramdown
+kramdown:
+  auto_ids: false
