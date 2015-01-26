@@ -1,18 +1,151 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=cyrillic,cyrillic-ext,latin);
 
 html, body {
     margin: 0;
     padding: 0
 }
 
-header, footer {
-    text-align: center
+body {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1em;
+    line-height: 1.6em;
+
+    -webkit-animation: fade .6s linear;
+    -moz-animation: fade .6s linear;
+    animation: fade .6s linear;
+}
+
+header {
+    color: #FFF;
+    padding-top: 2em;
+    background-image: url("../../upload/page/index/bg.jpg");
+    background-size: cover;
+}
+
+h1 {
+    font-size: 45px;
+    line-height: 48px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 0 0 24px;
+}
+
+img {
+    max-width: 100%;
+    border: 0;
+}
+
+a {
+    -webkit-transition: color 0.3s linear;
+    -moz-transition: color 0.3s linear;
+    transition: color 0.3s linear;
+}
+
+.logo {
+    font-family: monospace;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.menu {
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.menu-item {
+    float: left;
+    margin: .2em 1em;
+}
+
+.menu-item-link {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.menu-item-link:after {
+    content: '';
+    width: 0;
+    display: block;
+    border-bottom: 2px solid #FFF;
+    -webkit-transition: width 0.3s linear;
+    -moz-transition: width 0.3s linear;
+    transition: width 0.3s linear;
+}
+
+.menu-item-link:hover {
+    color: #FFF;
+}
+
+.menu-item-link:hover:after {
+    width: 100%;
+}
+
+.main-title {
+    font-size: 3em;
+    line-height: 1.1;
+    width: 80%;
+    margin: 2em 0;
+}
+
+.content, .post-content {
+    padding-top: 3em;
+}
+
+.content div[class^='cell-'] p {
+    width: 80%;
+}
+
+.content .title, .post-content .title {
+    color: #a0aab2;
+    margin-top: 1.5em;
+}
+
+
+footer {
+    margin-top: 3em;
+    padding: 1em;
+    background-color: #F7F7F7;
 }
 
 .copy {
-    color: #000;
-    margin: 2em;
+    text-align: center;
+    color: #a0aab2;
+    padding: 1em 0;
 }
 
-.email {
-    color: #000;
+@-moz-keyframes fade {
+    from {
+        -moz-transform: translateY(-20px);
+        opacity: 0;
+        filter: alpha(opacity=0)
+    }
+    to {
+        -moz-transform: translateY(0);
+        -ms-filter: none;
+        opacity: 1;
+        filter: none;
+    }
+}
+
+@-webkit-keyframes fade {
+    from {
+        -webkit-transform: translateY(-20px);
+        opacity: 0;
+        filter: alpha(opacity=0)
+    }
+    to {
+        -webkit-transform: translateY(0);
+        -ms-filter: none;
+        opacity: 1;
+        filter: none
+    }
 }

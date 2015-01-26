@@ -1,0 +1,29 @@
+<header>
+    <div class="container">
+        <div class="cell-1-4">
+            <div class="module">
+                <a class="logo" href="{{ site.url }}">{{ site.title }}</a>
+            </div>
+        </div>
+        <div class="cell-3-4">
+            <div class="module">
+                <ul class="menu">
+                    {% for link in site.header_menu %}
+                    <li class="menu-item">
+                        <a class="menu-item-link" title="{{ link.title }}" href="{{ link.url }}">
+                            {{ link.title }}
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <div class="clear"></div>
+
+        <div class="cell-1-1">
+            <div class="module">
+                <h1 class="main-title">{% if post.title %}{{ post.title }}{% else %}{{ page.title }}{% endif %}</h1>
+            </div>
+        </div>
+    </div>
+</header>
