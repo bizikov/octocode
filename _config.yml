@@ -1,7 +1,6 @@
 title: OctoCode.
-email: my@octocode.org
+email: info@octocode.org
 
-#url: "http://localhost:4000"
 url: "http://octocode.org"
 
 header_menu:
@@ -21,7 +20,7 @@ css:
 
 permalink: /:categories/:year/:month/:title/
 
-timezone:    Asia/Yerevan
+timezone:    Asia/Yekaterinburg
 future:      true
 highlighter: pygments
 markdown:    kramdown
