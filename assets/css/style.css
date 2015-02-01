@@ -89,6 +89,12 @@ a {
     width: 100%;
 }
 
+.mobile-menu {
+    display: none;
+    width: 100%;
+    margin-top: 2em;
+}
+
 .main-title {
     font-size: 3em;
     line-height: 1.1;
@@ -108,7 +114,6 @@ a {
     color: #a0aab2;
     margin-top: 1.5em;
 }
-
 
 footer {
     margin-top: 3em;
@@ -148,4 +153,37 @@ footer {
         opacity: 1;
         filter: none
     }
+}
+
+@media screen and (max-width: 960px) {
+    .container {
+        width: 100% !important;
+        padding: 0 4%;
+    }
+
+    .container div[class^='cell-'] {
+        width: 100%;
+        float: none;
+    }
+
+    .container div[class^='cell-'] p {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .main-title {
+        font-size: 2em;
+        width: 100%;
+        margin: 1em 0;
+    }
+
 }

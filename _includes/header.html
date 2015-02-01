@@ -16,6 +16,10 @@
                     </li>
                     {% endfor %}
                 </ul>
+                <select class="mobile-menu" name="" id="menu">
+                    <option value="null">Меню</option>
+                    {% for link in site.header_menu %}<option value="{{ link.url }}">{{ link.title }}</option>{% endfor %}
+                </select>
             </div>
         </div>
         <div class="clear"></div>

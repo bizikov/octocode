@@ -5,5 +5,11 @@
 {% include header.html %}
 {{ content }}
 {% include footer.html %}
+<script>
+    var menu = document.getElementById('menu');
+    menu.addEventListener('change', function (e) {
+        window.location.href = window.location.origin + e.target.value;
+    });
+</script>
 </body>
 </html>
